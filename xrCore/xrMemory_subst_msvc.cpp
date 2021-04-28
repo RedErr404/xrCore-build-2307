@@ -110,7 +110,7 @@ void	xrMemory::mem_free		(void* P)
 		xr_aligned_free			(_real);
 	} else {
 		// pooled
-		VERIFY2					(pool<mem_pools_count);
+		VERIFY					(pool<mem_pools_count);
 
 		mem_pools[pool].destroy	(_real);
 	}

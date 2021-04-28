@@ -624,7 +624,7 @@ void CKinematics::AddWallmark(const Fmatrix* parent_xform, const Fvector3& start
 	wallmarks.push_back		(wm);
 }
 
-static const float LIFE_TIME=30.f;
+static const float LIFE_TIME=300.f;
 struct zero_wm_pred : public std::unary_function<CSkeletonWallmark*, bool>
 {
 	bool operator()(const CSkeletonWallmark* x){ return x==0; }

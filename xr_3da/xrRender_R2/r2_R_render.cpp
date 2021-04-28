@@ -236,8 +236,10 @@ void CRender::Render		()
 	LP_pending.sort							();
 
 	// Wall marks
-	Target->phase_wallmarks					();
-	Wallmarks->Render						();				// wallmarks has priority as normal geometry
+	if (Wallmarks)	{
+		Target->phase_wallmarks();
+		Wallmarks->Render();				// wallmarks has priority as normal geometry
+	}
 
 	// Update incremental shadowmap-visibility solver
 	{
