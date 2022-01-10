@@ -128,7 +128,7 @@
       <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
       <PrecompiledHeaderOutputFile>X:\xr_build\intermediate\$(Configuration)\$(ProjectName)\XR_3DA.pch</PrecompiledHeaderOutputFile>
       <AssemblerListingLocation>X:\xr_build\intermediate\$(Configuration)\$(ProjectName)\</AssemblerListingLocation>
-      <ObjectFileName>X:\xr_build\intermediate\$(Configuration)\$(ProjectName)\</ObjectFileName>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
       <ProgramDataBaseFileName>$(IntDir)</ProgramDataBaseFileName>
       <BrowseInformation />
       <WarningLevel>Level4</WarningLevel>
@@ -148,7 +148,7 @@
       <OutputFile>X:\xr_build\binaries\XR_3DA.exe</OutputFile>
       <SuppressStartupBanner>true</SuppressStartupBanner>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <ProgramDatabaseFile>$(OutDir)$(TargetName).pdb</ProgramDatabaseFile>
+      <ProgramDatabaseFile>X:\xr_build\binaries\$(TargetName).pdb</ProgramDatabaseFile>
       <GenerateMapFile>true</GenerateMapFile>
       <MapFileName>X:\xr_build\binaries\XR_3DA.map</MapFileName>
       <MapExports>false</MapExports>
@@ -184,7 +184,7 @@
       <PrecompiledHeaderOutputFile>X:\xr_build\intermediate\$(Configuration)\$(ProjectName)\XR_3DA.pch</PrecompiledHeaderOutputFile>
       <AssemblerOutput />
       <AssemblerListingLocation>X:\xr_build\intermediate\$(Configuration)\$(ProjectName)\</AssemblerListingLocation>
-      <ObjectFileName>X:\xr_build\intermediate\$(Configuration)\$(ProjectName)</ObjectFileName>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
       <ProgramDataBaseFileName>$(IntDir)</ProgramDataBaseFileName>
       <BrowseInformation />
       <WarningLevel>Level4</WarningLevel>
@@ -203,7 +203,7 @@
       <AdditionalLibraryDirectories>X:\xr_build\binaries;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <IgnoreSpecificDefaultLibraries>libcmt.lib;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <ProgramDatabaseFile>$(OutDir)$(TargetName).pdb</ProgramDatabaseFile>
+      <ProgramDatabaseFile>X:\xr_build\binaries\$(TargetName).pdb</ProgramDatabaseFile>
       <GenerateMapFile>false</GenerateMapFile>
       <MapFileName>X:\xr_build\binaries\XR_3DA.map</MapFileName>
       <SubSystem>Windows</SubSystem>
@@ -240,7 +240,7 @@
       <PrecompiledHeaderOutputFile>X:\xr_build\intermediate\$(Configuration)\$(ProjectName)\/XR_3DA.pch</PrecompiledHeaderOutputFile>
       <AssemblerOutput>AssemblyAndSourceCode</AssemblerOutput>
       <AssemblerListingLocation>X:\xr_build\intermediate\$(Configuration)\$(ProjectName)\</AssemblerListingLocation>
-      <ObjectFileName>X:\xr_build\intermediate\$(Configuration)\$(ProjectName)\</ObjectFileName>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
       <ProgramDataBaseFileName>$(IntDir)</ProgramDataBaseFileName>
       <BrowseInformation />
       <WarningLevel>Level4</WarningLevel>
@@ -260,7 +260,7 @@
       <SuppressStartupBanner>true</SuppressStartupBanner>
       <AdditionalLibraryDirectories>X:\xr_build\binaries;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <ProgramDatabaseFile>$(OutDir)$(TargetName).pdb</ProgramDatabaseFile>
+      <ProgramDatabaseFile>X:\xr_build\binaries\$(TargetName).pdb</ProgramDatabaseFile>
       <GenerateMapFile>false</GenerateMapFile>
       <MapFileName>X:\xr_build\binaries\XR_3DA.map</MapFileName>
       <SubSystem>Windows</SubSystem>
@@ -298,7 +298,7 @@
       <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
       <PrecompiledHeaderOutputFile>X:\xr_build\intermediate\$(Configuration)\$(ProjectName)\XR_3DA.pch</PrecompiledHeaderOutputFile>
       <AssemblerListingLocation>X:\xr_build\intermediate\$(Configuration)\$(ProjectName)\</AssemblerListingLocation>
-      <ObjectFileName>X:\xr_build\intermediate\$(Configuration)\$(ProjectName)\</ObjectFileName>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
       <ProgramDataBaseFileName>$(IntDir)</ProgramDataBaseFileName>
       <BrowseInformation />
       <WarningLevel>Level4</WarningLevel>
@@ -319,7 +319,7 @@
       <OutputFile>X:\xr_build\binaries\XR_3DA.exe</OutputFile>
       <SuppressStartupBanner>true</SuppressStartupBanner>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <ProgramDatabaseFile>$(OutDir)$(TargetName).pdb</ProgramDatabaseFile>
+      <ProgramDatabaseFile>X:\xr_build\binaries\$(TargetName).pdb</ProgramDatabaseFile>
       <GenerateMapFile>true</GenerateMapFile>
       <MapFileName>X:\xr_build\binaries\XR_3DA.map</MapFileName>
       <MapExports>false</MapExports>

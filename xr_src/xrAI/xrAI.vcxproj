@@ -64,18 +64,18 @@
     <_ProjectFileVersion>12.0.30501.0</_ProjectFileVersion>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
-    <OutDir>x:\</OutDir>
-    <IntDir>.\Debug\</IntDir>
+    <OutDir>X:\xr_build\binaries\</OutDir>
+    <IntDir>X:\xr_build\intermediate\$(Configuration)\$(ProjectName)\</IntDir>
     <LinkIncremental>true</LinkIncremental>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
-    <OutDir>x:\</OutDir>
-    <IntDir>.\Release\</IntDir>
+    <OutDir>X:\xr_build\binaries\</OutDir>
+    <IntDir>X:\xr_build\intermediate\$(Configuration)\$(ProjectName)\</IntDir>
     <LinkIncremental>false</LinkIncremental>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Mixed|Win32'">
-    <OutDir>x:\</OutDir>
-    <IntDir>Mixed\</IntDir>
+    <OutDir>X:\xr_build\binaries\</OutDir>
+    <IntDir>X:\xr_build\intermediate\$(Configuration)\$(ProjectName)\</IntDir>
     <LinkIncremental>false</LinkIncremental>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
@@ -105,6 +105,7 @@
       <SuppressStartupBanner>true</SuppressStartupBanner>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
       <ShowIncludes>false</ShowIncludes>
+      <AdditionalIncludeDirectories>X:\dependencies\MagicSoftware\FreeMagic\Include;X:\dependencies\Xiph\Include;X:\dependencies\boost_1_30_0;X:\dependencies\luabind\luabind\luabind\luabind;X:\xr_src\xrLUA_JIT\src;X:\dependencies\lua-5.0\include;X:\xr_src\xrCore;X:\dependencies\dxsdk_feb2005\Include;X:\dependencies\libtheora-1.0alpha4\include;X:\dependencies\OGG\ogg\include;X:\dependencies\loki;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
@@ -113,10 +114,10 @@
     <Link>
       <AdditionalOptions>/MACHINE:I386 %(AdditionalOptions)</AdditionalOptions>
       <AdditionalDependencies>odbc32.lib;odbccp32.lib;magicfm.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <OutputFile>x:/xrAI.exe</OutputFile>
+      <OutputFile>X:\xr_build\binaries\xrAI.exe</OutputFile>
       <SuppressStartupBanner>true</SuppressStartupBanner>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <ProgramDatabaseFile>x:\$(ProjectName).pdb</ProgramDatabaseFile>
+      <ProgramDatabaseFile>X:\xr_build\binaries\$(ProjectName).pdb</ProgramDatabaseFile>
       <GenerateMapFile>true</GenerateMapFile>
       <MapFileName>x:\$(ProjectName).map</MapFileName>
       <MapExports>false</MapExports>
@@ -125,6 +126,7 @@
       <StackCommitSize>0</StackCommitSize>
       <LargeAddressAware />
       <TargetMachine>NotSet</TargetMachine>
+      <AdditionalLibraryDirectories>X:\xr_build\binaries;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -142,7 +144,7 @@
       <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
       <OmitFramePointers>true</OmitFramePointers>
       <EnableFiberSafeOptimizations>false</EnableFiberSafeOptimizations>
-      <AdditionalIncludeDirectories>x:\xrCore;X:\External Library\dxsdk_feb2005\Include;X:\External Library\MagicSoftware\FreeMagic\Include;X:\External Library\loki;X:\External Library\luabind\luabind\luabind\luabind;X:\External Library\boost_1_30_0;X:\xrLUA_JIT\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>X:\dependencies\MagicSoftware\FreeMagic\Include;X:\dependencies\Xiph\Include;X:\dependencies\boost_1_30_0;X:\dependencies\luabind\luabind\luabind\luabind;X:\xr_src\xrLUA_JIT\src;X:\dependencies\lua-5.0\include;X:\xr_src\xrCore;X:\dependencies\dxsdk_feb2005\Include;X:\dependencies\libtheora-1.0alpha4\include;X:\dependencies\OGG\ogg\include;X:\dependencies\loki;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;AI_COMPILER;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <StringPooling>true</StringPooling>
       <ExceptionHandling />
@@ -170,11 +172,11 @@
     <Link>
       <AdditionalOptions>/MACHINE:I386 %(AdditionalOptions)</AdditionalOptions>
       <AdditionalDependencies>odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <OutputFile>x:\xrAI.exe</OutputFile>
+      <OutputFile>X:\xr_build\binaries\xrAI.exe</OutputFile>
       <SuppressStartupBanner>true</SuppressStartupBanner>
-      <AdditionalLibraryDirectories>x:\;X:\External Library\dxsdk_feb2005\Lib\x86;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>X:\xr_build\binaries;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <ProgramDatabaseFile>x:\$(ProjectName).pdb</ProgramDatabaseFile>
+      <ProgramDatabaseFile>X:\xr_build\binaries\$(ProjectName).pdb</ProgramDatabaseFile>
       <GenerateMapFile>true</GenerateMapFile>
       <SubSystem>Windows</SubSystem>
       <StackReserveSize>0</StackReserveSize>
@@ -200,7 +202,7 @@
       <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
       <OmitFramePointers>false</OmitFramePointers>
       <EnableFiberSafeOptimizations>true</EnableFiberSafeOptimizations>
-      <AdditionalIncludeDirectories>x:\xrCore;X:\External Library\dxsdk_feb2005\Include;X:\External Library\MagicSoftware\FreeMagic\Include;X:\External Library\loki;X:\External Library\luabind\luabind\luabind\luabind;X:\External Library\boost_1_30_0;X:\xrLUA_JIT\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>X:\dependencies\MagicSoftware\FreeMagic\Include;X:\dependencies\Xiph\Include;X:\dependencies\boost_1_30_0;X:\dependencies\luabind\luabind\luabind\luabind;X:\xr_src\xrLUA_JIT\src;X:\dependencies\lua-5.0\include;X:\xr_src\xrCore;X:\dependencies\dxsdk_feb2005\Include;X:\dependencies\libtheora-1.0alpha4\include;X:\dependencies\OGG\ogg\include;X:\dependencies\loki;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;AI_COMPILER;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <StringPooling>true</StringPooling>
       <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
@@ -228,11 +230,11 @@
     <Link>
       <AdditionalOptions>/MACHINE:I386 %(AdditionalOptions)</AdditionalOptions>
       <AdditionalDependencies>odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <OutputFile>x:\xrAI.exe</OutputFile>
+      <OutputFile>X:\xr_build\binaries\xrAI.exe</OutputFile>
       <SuppressStartupBanner>true</SuppressStartupBanner>
-      <AdditionalLibraryDirectories>x:\;X:\External Library\dxsdk_feb2005\Lib\x86;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>X:\xr_build\binaries;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <ProgramDatabaseFile>x:\$(ProjectName).pdb</ProgramDatabaseFile>
+      <ProgramDatabaseFile>X:\xr_build\binaries\$(ProjectName).pdb</ProgramDatabaseFile>
       <GenerateMapFile>true</GenerateMapFile>
       <SubSystem>Windows</SubSystem>
       <StackReserveSize>0</StackReserveSize>

@@ -7,7 +7,7 @@
 #pragma warning(disable:4995)
 #pragma warning(disable:4530)
 #include "xrCore.h"
-#pragma comment(lib,"x:/xrCore.lib")
+#pragma comment(lib,"xrCore.lib")
 #pragma warning(pop)
 
 // Lua
@@ -17,7 +17,7 @@ extern "C"	{
 #include "lauxlib.h"
 #include "luajit.h"
 };
-#pragma comment(lib,"x:/xrLUA.lib")
+#pragma comment(lib,"xrLUA.lib")
 
 // Lua-bind
 #pragma warning(disable:4995)

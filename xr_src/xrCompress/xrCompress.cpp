@@ -12,7 +12,7 @@ F// xrCompress.cpp : Defines the entry point for the console application.
 #include <sys\stat.h>
 #pragma warning(default:4995)
 
-#pragma comment			(lib,"x:\\xrCore.lib")
+#pragma comment			(lib,"xrCore.lib")
 
 extern int ProcessDifference();
 

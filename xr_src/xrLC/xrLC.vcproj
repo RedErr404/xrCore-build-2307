@@ -19,7 +19,7 @@
 	<Configurations>
 		<Configuration
 			Name="Release|Win32"
-			OutputDirectory="x:\"
+			OutputDirectory="X:\xr_build\binaries\"
 			IntermediateDirectory=".\Release"
 			ConfigurationType="1"
 			InheritedPropertySheets="$(VCInstallDir)VCProjectDefaults\UpgradeFromVC71.vsprops"
@@ -305,12 +305,12 @@
 			<Tool
 				Name="VCLinkerTool"
 				ShowProgress="0"
-				OutputFile="x:\xrLC.exe"
+				OutputFile="X:\xr_build\binaries\xrLC.exe"
 				LinkIncremental="1"
 				SuppressStartupBanner="true"
-				AdditionalLibraryDirectories="x:\"
+				AdditionalLibraryDirectories="X:\xr_build\binaries\"
 				GenerateDebugInformation="true"
-				ProgramDatabaseFile="x:\$(ProjectName).pdb"
+				ProgramDatabaseFile="X:\xr_build\binaries\$(ProjectName).pdb"
 				GenerateMapFile="true"
 				MapExports="false"
 				SubSystem="2"

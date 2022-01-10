@@ -151,7 +151,7 @@
       <OutputFile>X:\xr_build\binaries\xrCDB.dll</OutputFile>
       <SuppressStartupBanner>true</SuppressStartupBanner>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <ProgramDatabaseFile>$(OutDir)$(TargetName).pdb</ProgramDatabaseFile>
+      <ProgramDatabaseFile>X:\xr_build\binaries\$(TargetName).pdb</ProgramDatabaseFile>
       <GenerateMapFile>false</GenerateMapFile>
       <SubSystem>Windows</SubSystem>
       <OptimizeReferences>true</OptimizeReferences>
@@ -202,7 +202,7 @@
     <Link>
       <OutputFile>X:\xr_build\binaries\xrCDB.dll</OutputFile>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <ProgramDatabaseFile>$(OutDir)$(TargetName).pdb</ProgramDatabaseFile>
+      <ProgramDatabaseFile>X:\xr_build\binaries\$(TargetName).pdb</ProgramDatabaseFile>
       <SubSystem>Windows</SubSystem>
       <ImportLibrary>X:\xr_build\binaries\xrCDB.lib</ImportLibrary>
       <TargetMachine>NotSet</TargetMachine>
@@ -254,7 +254,7 @@
       <OutputFile>X:\xr_build\binaries\xrCDB.dll</OutputFile>
       <SuppressStartupBanner>true</SuppressStartupBanner>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <ProgramDatabaseFile>$(OutDir)$(TargetName).pdb</ProgramDatabaseFile>
+      <ProgramDatabaseFile>X:\xr_build\binaries\$(TargetName).pdb</ProgramDatabaseFile>
       <GenerateMapFile>true</GenerateMapFile>
       <MapFileName>x:\xrCDB.map</MapFileName>
       <MapExports>false</MapExports>
@@ -307,7 +307,7 @@
       <OutputFile>X:\xr_build\binaries\xrCDB.dll</OutputFile>
       <SuppressStartupBanner>true</SuppressStartupBanner>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <ProgramDatabaseFile>$(OutDir)$(TargetName).pdb</ProgramDatabaseFile>
+      <ProgramDatabaseFile>X:\xr_build\binaries\$(TargetName).pdb</ProgramDatabaseFile>
       <GenerateMapFile>true</GenerateMapFile>
       <MapFileName>x:\xrCDB.map</MapFileName>
       <MapExports>false</MapExports>

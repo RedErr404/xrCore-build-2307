@@ -1,0 +1,26 @@
+;abbreviation    = recurs,notif,  root,        add,    ext,          description
+;$app_root$ - current application path
+$local_root$    	= false, true,  X:\xr_build\
+$server_root$    	= false, false, $local_root$
+$server_data_root$  	= false, false, $local_root$
+$build_copy$    	= true,  false, $local_root$,      xray_build\
+$game_data$    		= false, true,  $server_root$,     gamedata\
+$local_game_data$    	= false, true,  $local_root$,      gamedata\
+$game_ai$    		= true,  false, $game_data$,       ai\
+$game_spawn$    	= true,  false, $game_data$,       spawns\
+$game_levels$    	= true,  false, $game_data$,       levels\
+$game_meshes$    	= true,  true,  $game_data$,       meshes\,    *.ogf;*.omf,        Game Object files
+$game_anims$    	= true,  true,  $game_data$,       anims\,    *.anm;*.anms,        Animation files
+$game_dm$    		= true,  true,  $game_data$,       meshes\,    *.dm,          Detail Model files
+$game_shaders$    	= true,  true,  $game_data$,       shaders\
+$game_sounds$    	= true,  true,  $game_data$,       sounds\
+$game_textures$    	= true,  true,  $game_data$,       textures\
+$game_saves$    	= true,  false, $server_root$,       savedgames\,  *.sav,          Saved games
+$game_config$    	= true,  false, $game_data$,       config\
+$level$      		= false, false, $game_levels$
+$game_scripts$    	= true,  false, $game_data$,       scripts\,      *.script,                      Game script files
+$logs$      		= true,  false, $server_root$,       logs\,    *.err,          Log files
+$screenshots$    	= true,  false, $server_root$,       screenshots\
+$textures$    		= true,  true,  $server_data_root$,    textures\
+$cache$     		= true,  false, $local_root$,      xr_cache\
+$mod_dir$    		= true,  false, $server_root$, customgames\

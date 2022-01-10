@@ -1,0 +1,1 @@
+@start binaries\xr_3da.exe -xcls -i -r2 -ltx user.ltx

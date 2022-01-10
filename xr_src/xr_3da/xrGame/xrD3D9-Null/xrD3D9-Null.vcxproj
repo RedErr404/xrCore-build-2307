@@ -50,14 +50,14 @@
     <_ProjectFileVersion>12.0.30501.0</_ProjectFileVersion>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
-    <OutDir>Debug\</OutDir>
-    <IntDir>Debug\</IntDir>
+    <OutDir>X:\xr_build\binaries\</OutDir>
+    <IntDir>X:\xr_build\intermediate\$(Configuration)\$(ProjectName)\</IntDir>
     <ExtensionsToDeleteOnClean>*.idb%3b*.obj%3b*.ilk%3b*.pdb%3b*.tlb%3b*.tli%3b*.tlh%3b*.tmp%3b*.rsp%3b*.bat%3b$(TargetPath)</ExtensionsToDeleteOnClean>
     <LinkIncremental>true</LinkIncremental>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
-    <OutDir>Release\</OutDir>
-    <IntDir>Release\</IntDir>
+    <OutDir>X:\xr_build\binaries\</OutDir>
+    <IntDir>X:\xr_build\intermediate\$(Configuration)\$(ProjectName)\</IntDir>
     <LinkIncremental>false</LinkIncremental>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
@@ -70,9 +70,10 @@
       <PrecompiledHeader>Use</PrecompiledHeader>
       <WarningLevel>Level3</WarningLevel>
       <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <AdditionalIncludeDirectories>X:\dependencies\Xiph\Include;X:\dependencies\boost_1_30_0;X:\dependencies\luabind\luabind\luabind\luabind;X:\xr_src\xrLUA_JIT\src;X:\dependencies\lua-5.0\include;X:\xr_src\xrCore;X:\dependencies\dxsdk_feb2005\Include;X:\dependencies\libtheora-1.0alpha4\include;X:\dependencies\OGG\ogg\include;X:\dependencies\loki;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
-      <OutputFile>x:\D3D9-Null.dll</OutputFile>
+      <OutputFile>X:\xr_build\binaries\D3D9-Null.dll</OutputFile>
       <ModuleDefinitionFile>xrD3D9-Null.def</ModuleDefinitionFile>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <ProgramDatabaseFile>$(OutDir)D3D9-Null.pdb</ProgramDatabaseFile>
@@ -95,12 +96,13 @@
       <PrecompiledHeader>Use</PrecompiledHeader>
       <WarningLevel>Level3</WarningLevel>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <AdditionalIncludeDirectories>X:\dependencies\Xiph\Include;X:\dependencies\boost_1_30_0;X:\dependencies\luabind\luabind\luabind\luabind;X:\xr_src\xrLUA_JIT\src;X:\dependencies\lua-5.0\include;X:\xr_src\xrCore;X:\dependencies\dxsdk_feb2005\Include;X:\dependencies\libtheora-1.0alpha4\include;X:\dependencies\OGG\ogg\include;X:\dependencies\loki;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
-      <OutputFile>x:\D3D9-Null.dll</OutputFile>
+      <OutputFile>X:\xr_build\binaries\D3D9-Null.dll</OutputFile>
       <ModuleDefinitionFile>xrD3D9-Null.def</ModuleDefinitionFile>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <ProgramDatabaseFile>$(OutDir)D3D9-Null.pdb</ProgramDatabaseFile>
+      <ProgramDatabaseFile>X:\xr_build\binaries\D3D9-Null.pdb</ProgramDatabaseFile>
       <SubSystem>Windows</SubSystem>
       <OptimizeReferences>true</OptimizeReferences>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>

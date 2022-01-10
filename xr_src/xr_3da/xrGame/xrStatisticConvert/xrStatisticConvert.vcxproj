@@ -48,13 +48,13 @@
     <_ProjectFileVersion>12.0.21005.1</_ProjectFileVersion>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
-    <OutDir>x:\</OutDir>
-    <IntDir>.\Debug\</IntDir>
+    <OutDir>X:\xr_build\binaries\</OutDir>
+    <IntDir>X:\xr_build\intermediate\$(Configuration)\$(ProjectName)\</IntDir>
     <LinkIncremental>true</LinkIncremental>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
-    <OutDir>x:\</OutDir>
-    <IntDir>.\Release\</IntDir>
+    <OutDir>X:\xr_build\binaries\</OutDir>
+    <IntDir>X:\xr_build\intermediate\$(Configuration)\$(ProjectName)\</IntDir>
     <LinkIncremental>false</LinkIncremental>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
@@ -69,7 +69,7 @@
       <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
     </ClCompile>
     <Link>
-      <OutputFile>x:/xrStatisticConvert.exe</OutputFile>
+      <OutputFile>X:\xr_build\binaries\xrStatisticConvert.exe</OutputFile>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <ProgramDatabaseFile>$(OutDir)xrStatisticConvert.pdb</ProgramDatabaseFile>
       <SubSystem>Console</SubSystem>
@@ -87,7 +87,7 @@
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
     </ClCompile>
     <Link>
-      <OutputFile>x:/xrStatisticConvert.exe</OutputFile>
+      <OutputFile>X:\xr_build\binaries\xrStatisticConvert.exe</OutputFile>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <SubSystem>Console</SubSystem>
       <OptimizeReferences>true</OptimizeReferences>

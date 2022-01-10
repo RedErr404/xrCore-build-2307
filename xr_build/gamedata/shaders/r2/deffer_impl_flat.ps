@@ -1,0 +1,21 @@
+#include "common.h"
+#include "sload.h"
+
+f_deffer 	main	( p_flat I )
+{
+  f_deffer	O;
+
+  // diffuse
+  half4 D	= tbase		(I.tcdh);		// IN:  rgb.a
+
+#ifdef	USE_TDETAIL
+	D.rgb	= 2*D.rgb*tex2D	(s_detail, I.tcdbump).rgb;
+#endif
+
+  // 2. Standart output
+  O.Ne          = half4		(normalize((half3)I.N.xyz), 			D.w		);
+  O.position    = half4 	(I.position.xyz + O.Ne.xyz*def_virtualh/2.h, 	L_material.w	);
+  O.C		= half4		(D.x,	D.y,	D.z,				def_gloss	);	// OUT: rgb.gloss
+
+  return O;
+}

@@ -78,24 +78,24 @@
     <_ProjectFileVersion>12.0.30501.0</_ProjectFileVersion>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
-    <OutDir>x:\</OutDir>
-    <IntDir>.\Debug\</IntDir>
+    <OutDir>X:\xr_build\binaries\</OutDir>
+    <IntDir>X:\xr_build\intermediate\$(Configuration)\$(ProjectName)\</IntDir>
     <IgnoreImportLibrary>true</IgnoreImportLibrary>
     <LinkIncremental>true</LinkIncremental>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Mixed|Win32'">
-    <OutDir>x:\</OutDir>
-    <IntDir>.\Mixed\</IntDir>
+    <OutDir>X:\xr_build\binaries\</OutDir>
+    <IntDir>X:\xr_build\intermediate\$(Configuration)\$(ProjectName)\</IntDir>
     <LinkIncremental>true</LinkIncremental>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
-    <OutDir>x:\</OutDir>
-    <IntDir>Release\</IntDir>
+    <OutDir>X:\xr_build\binaries\</OutDir>
+    <IntDir>X:\xr_build\intermediate\$(Configuration)\$(ProjectName)\</IntDir>
     <LinkIncremental>false</LinkIncremental>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugNoExceptions|Win32'">
-    <OutDir>x:\</OutDir>
-    <IntDir>$(Configuration)\</IntDir>
+    <OutDir>X:\xr_build\binaries\</OutDir>
+    <IntDir>X:\xr_build\intermediate\$(Configuration)\$(ProjectName)\</IntDir>
     <IgnoreImportLibrary>true</IgnoreImportLibrary>
     <LinkIncremental>true</LinkIncremental>
   </PropertyGroup>
@@ -103,7 +103,7 @@
     <ClCompile>
       <Optimization>Disabled</Optimization>
       <EnableFiberSafeOptimizations>false</EnableFiberSafeOptimizations>
-      <AdditionalIncludeDirectories>x:\xrCore;X:\External Library\loki;X:\External Library\luabind\luabind\luabind\luabind;X:\External Library\boost_1_30_0;X:\xrLUA_JIT\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>X:\dependencies\Xiph\Include;X:\dependencies\boost_1_30_0;X:\dependencies\luabind\luabind\luabind\luabind;X:\xr_src\xrLUA_JIT\src;X:\dependencies\lua-5.0\include;X:\xr_src\xrCore;X:\dependencies\dxsdk_feb2005\Include;X:\dependencies\libtheora-1.0alpha4\include;X:\dependencies\OGG\ogg\include;X:\dependencies\loki;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>WIN32;_DEBUG;DEBUG;_WINDOWS;_USRDLL;XRSE_FACTORY_EXPORTS;MSVC;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <PreprocessToFile>false</PreprocessToFile>
       <PreprocessSuppressLineNumbers>false</PreprocessSuppressLineNumbers>
@@ -117,8 +117,8 @@
       <PrecompiledHeader>Use</PrecompiledHeader>
       <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
       <PrecompiledHeaderOutputFile>.\Debug/xrSE_Factory.pch</PrecompiledHeaderOutputFile>
-      <AssemblerListingLocation>Debug\</AssemblerListingLocation>
-      <ObjectFileName>Debug\</ObjectFileName>
+      <AssemblerListingLocation> </AssemblerListingLocation>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
       <ProgramDataBaseFileName>$(IntDir)</ProgramDataBaseFileName>
       <WarningLevel>Level4</WarningLevel>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
@@ -126,15 +126,16 @@
     </ClCompile>
     <Link>
       <AdditionalOptions>/MACHINE:I386 %(AdditionalOptions)</AdditionalOptions>
-      <OutputFile>x:\xrSE_Factory.dll</OutputFile>
+      <OutputFile>X:\xr_build\binaries\xrSE_Factory.dll</OutputFile>
       <SuppressStartupBanner>true</SuppressStartupBanner>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <ProgramDatabaseFile>$(OutDir)$(TargetName).pdb</ProgramDatabaseFile>
+      <ProgramDatabaseFile>X:\xr_build\binaries\$(TargetName).pdb</ProgramDatabaseFile>
       <GenerateMapFile>true</GenerateMapFile>
-      <MapFileName>x:\xrSE_Factory.map</MapFileName>
+      <MapFileName>X:\xr_build\binaries\xrSE_Factory.map</MapFileName>
       <SubSystem>Windows</SubSystem>
-      <ImportLibrary>x:\xrSE_Factory.lib</ImportLibrary>
+      <ImportLibrary>X:\xr_build\binaries\xrSE_Factory.lib</ImportLibrary>
       <TargetMachine>MachineX86</TargetMachine>
+      <AdditionalLibraryDirectories>X:\xr_build\binaries;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Mixed|Win32'">
@@ -152,7 +153,7 @@
       <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
       <OmitFramePointers>false</OmitFramePointers>
       <EnableFiberSafeOptimizations>true</EnableFiberSafeOptimizations>
-      <AdditionalIncludeDirectories>x:\xrCore;X:\External Library\loki;X:\External Library\luabind\luabind\luabind\luabind;X:\External Library\boost_1_30_0;X:\xrLUA_JIT\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>X:\dependencies\Xiph\Include;X:\dependencies\boost_1_30_0;X:\dependencies\luabind\luabind\luabind\luabind;X:\xr_src\xrLUA_JIT\src;X:\dependencies\lua-5.0\include;X:\xr_src\xrCore;X:\dependencies\dxsdk_feb2005\Include;X:\dependencies\libtheora-1.0alpha4\include;X:\dependencies\OGG\ogg\include;X:\dependencies\loki;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>DEBUG;MIXED;WIN32;NDEBUG;_WINDOWS;_USRDLL;XRSE_FACTORY_EXPORTS;dSINGLE;MSVC;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <StringPooling>true</StringPooling>
       <MinimalRebuild>false</MinimalRebuild>
@@ -167,8 +168,8 @@
       <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
       <PrecompiledHeaderOutputFile>.\Mixed/xrSE_Factory.pch</PrecompiledHeaderOutputFile>
       <AssemblerOutput />
-      <AssemblerListingLocation>Mixed\</AssemblerListingLocation>
-      <ObjectFileName>Mixed\</ObjectFileName>
+      <AssemblerListingLocation> </AssemblerListingLocation>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
       <ProgramDataBaseFileName>$(IntDir)</ProgramDataBaseFileName>
       <BrowseInformation />
       <WarningLevel>Level4</WarningLevel>
@@ -182,15 +183,16 @@
     <Link>
       <AdditionalOptions>/MACHINE:I386  %(AdditionalOptions)</AdditionalOptions>
       <AdditionalDependencies>odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <OutputFile>x:\xrSE_Factory.dll</OutputFile>
+      <OutputFile>X:\xr_build\binaries\xrSE_Factory.dll</OutputFile>
       <SuppressStartupBanner>true</SuppressStartupBanner>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <ProgramDatabaseFile>$(OutDir)$(TargetName).pdb</ProgramDatabaseFile>
+      <ProgramDatabaseFile>X:\xr_build\binaries\$(TargetName).pdb</ProgramDatabaseFile>
       <GenerateMapFile>true</GenerateMapFile>
-      <MapFileName>.\Mixed/xrSE_Factory.map</MapFileName>
-      <ImportLibrary>x:\xrSE_Factory.lib</ImportLibrary>
+      <MapFileName>X:\xr_build\binaries\xrSE_Factory.map</MapFileName>
+      <ImportLibrary>X:\xr_build\binaries\xrSE_Factory.lib</ImportLibrary>
       <TargetMachine>MachineX86</TargetMachine>
       <SubSystem>Windows</SubSystem>
+      <AdditionalLibraryDirectories>X:\xr_build\binaries;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -201,7 +203,7 @@
       <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
       <OmitFramePointers>true</OmitFramePointers>
       <EnableFiberSafeOptimizations>true</EnableFiberSafeOptimizations>
-      <AdditionalIncludeDirectories>x:\xrCore;X:\External Library\loki;X:\External Library\luabind\luabind\luabind\luabind;X:\External Library\boost_1_30_0;X:\xrLUA_JIT\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>X:\dependencies\Xiph\Include;X:\dependencies\boost_1_30_0;X:\dependencies\luabind\luabind\luabind\luabind;X:\xr_src\xrLUA_JIT\src;X:\dependencies\lua-5.0\include;X:\xr_src\xrCore;X:\dependencies\dxsdk_feb2005\Include;X:\dependencies\libtheora-1.0alpha4\include;X:\dependencies\OGG\ogg\include;X:\dependencies\loki;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_USRDLL;XRSE_FACTORY_EXPORTS;LUABIND_NO_ERROR_CHECKING;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <StringPooling>true</StringPooling>
       <ExceptionHandling />
@@ -214,16 +216,20 @@
       <ProgramDataBaseFileName>$(IntDir)</ProgramDataBaseFileName>
       <WarningLevel>Level4</WarningLevel>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <AssemblerListingLocation> </AssemblerListingLocation>
     </ClCompile>
     <Link>
-      <OutputFile>$(OutDir)xrSE_Factory.dll</OutputFile>
+      <OutputFile>X:\xr_build\binaries\xrSE_Factory.dll</OutputFile>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <SubSystem>Windows</SubSystem>
       <OptimizeReferences>true</OptimizeReferences>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
-      <ImportLibrary>$(OutDir)xrSE_Factory.lib</ImportLibrary>
+      <ImportLibrary>X:\xr_build\binaries\xrSE_Factory.lib</ImportLibrary>
       <TargetMachine>MachineX86</TargetMachine>
       <LargeAddressAware>true</LargeAddressAware>
+      <AdditionalLibraryDirectories>X:\xr_build\binaries;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <MapFileName>X:\xr_build\binaries\xrSE_Factory.map</MapFileName>
+      <ProgramDatabaseFile>X:\xr_build\binaries\$(TargetName).pdb</ProgramDatabaseFile>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='DebugNoExceptions|Win32'">
@@ -243,24 +249,26 @@
       <PrecompiledHeader>Use</PrecompiledHeader>
       <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
       <PrecompiledHeaderOutputFile>$(IntDir)$(TargetName).pch</PrecompiledHeaderOutputFile>
-      <AssemblerListingLocation>DebugNoExceptions\</AssemblerListingLocation>
-      <ObjectFileName>DebugNoExceptions\</ObjectFileName>
+      <AssemblerListingLocation> </AssemblerListingLocation>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
       <ProgramDataBaseFileName>$(IntDir)</ProgramDataBaseFileName>
       <WarningLevel>Level4</WarningLevel>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
       <CallingConvention>StdCall</CallingConvention>
+      <AdditionalIncludeDirectories>X:\dependencies\Xiph\Include;X:\dependencies\boost_1_30_0;X:\dependencies\luabind\luabind\luabind\luabind;X:\xr_src\xrLUA_JIT\src;X:\dependencies\lua-5.0\include;X:\xr_src\xrCore;X:\dependencies\dxsdk_feb2005\Include;X:\dependencies\libtheora-1.0alpha4\include;X:\dependencies\OGG\ogg\include;X:\dependencies\loki;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <AdditionalOptions>/MACHINE:I386 %(AdditionalOptions)</AdditionalOptions>
-      <OutputFile>x:\xrSE_Factory.dll</OutputFile>
+      <OutputFile>X:\xr_build\binaries\xrSE_Factory.dll</OutputFile>
       <SuppressStartupBanner>true</SuppressStartupBanner>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <ProgramDatabaseFile>$(OutDir)$(TargetName).pdb</ProgramDatabaseFile>
+      <ProgramDatabaseFile>X:\xr_build\binaries\$(TargetName).pdb</ProgramDatabaseFile>
       <GenerateMapFile>true</GenerateMapFile>
-      <MapFileName>x:\xrSE_Factory.map</MapFileName>
+      <MapFileName>X:\xr_build\binaries\xrSE_Factory.map</MapFileName>
       <SubSystem>Windows</SubSystem>
-      <ImportLibrary>x:\xrSE_Factory.lib</ImportLibrary>
+      <ImportLibrary>X:\xr_build\binaries\xrSE_Factory.lib</ImportLibrary>
       <TargetMachine>MachineX86</TargetMachine>
+      <AdditionalLibraryDirectories>X:\xr_build\binaries;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>

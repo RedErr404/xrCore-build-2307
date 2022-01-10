@@ -8,7 +8,7 @@
 #define XRXMLPARSER_API __declspec(dllexport)
 #else
 #define XRXMLPARSER_API __declspec(dllimport)
-#pragma comment(lib,"x:\\xrXMLParser.lib")
+#pragma comment(lib,"xrXMLParser.lib")
 #endif
 
 

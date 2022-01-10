@@ -1,0 +1,10 @@
+;abbreviation            = recurs,notif,  root,        add,    ext,          description
+$local_root$             = false, true,  X:\xr_build\
+$server_root$            = false, true,  $local_root$
+$server_data_root$       = false, false, $local_root$
+$game_data$              = false, true,  gamedata\
+$game_config$            = true,  false, $game_data$,       config\
+$game_scripts$           = true,  false, $game_data$,       scripts\,      *.script,                      Game script files
+$logs$                   = true,  false, logs\
+$cache$                  = true,  false, xr_cache\
+$game_saves$             = false, true,  savedgames\
