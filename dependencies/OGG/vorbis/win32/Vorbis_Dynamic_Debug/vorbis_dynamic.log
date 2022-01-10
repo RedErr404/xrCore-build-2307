@@ -1,0 +1,169 @@
+﻿Сборка начата 28.04.2021 1:53:23.
+     1>Проект "X:\dependencies\OGG\vorbis\win32\vorbis_dynamic.vcxproj" в узле 2 (целевые объекты Build).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I..\..\ogg\include /I..\include /I..\win32\src /I..\..\vorbis\lib /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _WINDOWS /D _MBCS /D _USRDLL /Gm- /EHsc /RTC1 /MTd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo".\Vorbis_Dynamic_Debug/" /Fd".\Vorbis_Dynamic_Debug/vc120.pdb" /Gz /TC /analyze- /errorReport:prompt ..\lib\analysis.c ..\lib\bitrate.c ..\lib\block.c ..\lib\codebook.c ..\lib\envelope.c ..\lib\floor0.c ..\lib\floor1.c ..\lib\info.c ..\lib\lookup.c ..\lib\lpc.c ..\lib\lsp.c ..\lib\mapping0.c ..\lib\mdct.c ..\lib\psy.c ..\lib\registry.c ..\lib\res0.c ..\lib\sharedbook.c ..\lib\smallft.c ..\lib\synthesis.c ..\lib\vorbisenc.c ..\lib\window.c
+         analysis.c
+     1>x:\dependencies\ogg\vorbis\lib\scales.h(43): warning C4244: =: преобразование "int" в "float", возможна потеря данных
+     1>x:\dependencies\ogg\vorbis\lib\analysis.c(75): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\stdio.h(356): см. объявление "sprintf"
+     1>x:\dependencies\ogg\vorbis\lib\analysis.c(76): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\stdio.h(211): см. объявление "fopen"
+     1>x:\dependencies\ogg\vorbis\lib\analysis.c(82): warning C4244: инициализация: преобразование "double" в "float", возможна потеря данных
+         bitrate.c
+     1>x:\dependencies\ogg\vorbis\lib\bitrate.c(42): warning C4244: =: преобразование "double" в "long", возможна потеря данных
+     1>x:\dependencies\ogg\vorbis\lib\bitrate.c(43): warning C4244: =: преобразование "double" в "long", возможна потеря данных
+     1>x:\dependencies\ogg\vorbis\lib\bitrate.c(44): warning C4244: =: преобразование "double" в "long", возможна потеря данных
+     1>x:\dependencies\ogg\vorbis\lib\bitrate.c(75): warning C4244: инициализация: преобразование "double" в "int", возможна потеря данных
+     1>x:\dependencies\ogg\vorbis\lib\bitrate.c(80): warning C4244: инициализация: преобразование "double" в "long", возможна потеря данных
+     1>x:\dependencies\ogg\vorbis\lib\bitrate.c(127): warning C4244: =: преобразование "double" в "int", возможна потеря данных
+         block.c
+     1>x:\dependencies\ogg\vorbis\lib\block.c(837): warning C4244: -=: преобразование "ogg_int64_t" в "int", возможна потеря данных
+     1>x:\dependencies\ogg\vorbis\lib\block.c(840): warning C4244: +=: преобразование "ogg_int64_t" в "int", возможна потеря данных
+     1>x:\dependencies\ogg\vorbis\lib\block.c(853): warning C4244: инициализация: преобразование "ogg_int64_t" в "long", возможна потеря данных
+         codebook.c
+     1>x:\dependencies\ogg\vorbis\lib\scales.h(43): warning C4244: =: преобразование "int" в "float", возможна потеря данных
+         envelope.c
+     1>x:\dependencies\ogg\vorbis\lib\scales.h(43): warning C4244: =: преобразование "int" в "float", возможна потеря данных
+     1>x:\dependencies\ogg\vorbis\lib\envelope.c(48): warning C4244: =: преобразование "double" в "float", возможна потеря данных
+     1>x:\dependencies\ogg\vorbis\lib\envelope.c(65): warning C4244: =: преобразование "double" в "float", возможна потеря данных
+     1>x:\dependencies\ogg\vorbis\lib\envelope.c(68): warning C4244: =: преобразование "double" в "float", возможна потеря данных
+     1>x:\dependencies\ogg\vorbis\lib\envelope.c(128): warning C4244: инициализация: преобразование "double" в "float", возможна потеря данных
+     1>x:\dependencies\ogg\vorbis\lib\envelope.c(146): warning C4244: =: преобразование "double" в "float", возможна потеря данных
+         floor0.c
+     1>x:\dependencies\ogg\vorbis\lib\scales.h(43): warning C4244: =: преобразование "int" в "float", возможна потеря данных
+     1>x:\dependencies\ogg\vorbis\lib\floor0.c(124): warning C4244: инициализация: преобразование "double" в "float", возможна потеря данных
+     1>x:\dependencies\ogg\vorbis\lib\floor0.c(135): warning C4244: инициализация: преобразование "double" в "int", возможна потеря данных
+         floor1.c
+     1>x:\dependencies\ogg\vorbis\lib\scales.h(43): warning C4244: =: преобразование "int" в "float", возможна потеря данных
+     1>x:\dependencies\ogg\vorbis\lib\floor1.c(288): warning C4244: инициализация: преобразование "const float" в "int", возможна потеря данных
+     1>x:\dependencies\ogg\vorbis\lib\floor1.c(455): warning C4244: инициализация: преобразование "float" в "int", возможна потеря данных
+     1>x:\dependencies\ogg\vorbis\lib\floor1.c(509): warning C4244: =: преобразование "double" в "int", возможна потеря данных
+     1>x:\dependencies\ogg\vorbis\lib\floor1.c(510): warning C4244: =: преобразование "double" в "int", возможна потеря данных
+         info.c
+     1>x:\dependencies\ogg\vorbis\lib\info.c(54): warning C4244: =: преобразование "long" в "char", возможна потеря данных
+     1>x:\dependencies\ogg\vorbis\lib\info.c(69): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\string.h(112): см. объявление "strcpy"
+     1>x:\dependencies\ogg\vorbis\lib\info.c(76): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\string.h(112): см. объявление "strcpy"
+     1>x:\dependencies\ogg\vorbis\lib\info.c(77): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\string.h(118): см. объявление "strcat"
+     1>x:\dependencies\ogg\vorbis\lib\info.c(78): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\string.h(118): см. объявление "strcat"
+     1>x:\dependencies\ogg\vorbis\lib\info.c(100): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\string.h(112): см. объявление "strcpy"
+     1>x:\dependencies\ogg\vorbis\lib\info.c(101): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\string.h(118): см. объявление "strcat"
+     1>x:\dependencies\ogg\vorbis\lib\info.c(119): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\string.h(112): см. объявление "strcpy"
+     1>x:\dependencies\ogg\vorbis\lib\info.c(120): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\string.h(118): см. объявление "strcat"
+         lookup.c
+         lpc.c
+     1>x:\dependencies\ogg\vorbis\lib\scales.h(43): warning C4244: =: преобразование "int" в "float", возможна потеря данных
+     1>x:\dependencies\ogg\vorbis\lib\lpc.c(114): warning C4244: return: преобразование "double" в "float", возможна потеря данных
+         lsp.c
+     1>x:\dependencies\ogg\vorbis\lib\scales.h(43): warning C4244: =: преобразование "int" в "float", возможна потеря данных
+     1>x:\dependencies\ogg\vorbis\lib\lookup.c(31): warning C4244: return: преобразование "double" в "float", возможна потеря данных
+     1>x:\dependencies\ogg\vorbis\lib\lookup.c(38): warning C4244: return: преобразование "double" в "float", возможна потеря данных
+     1>x:\dependencies\ogg\vorbis\lib\lsp.c(101): warning C4244: =: преобразование "double" в "float", возможна потеря данных
+     1>x:\dependencies\ogg\vorbis\lib\lsp.c(351): warning C4244: =: преобразование "double" в "float", возможна потеря данных
+     1>x:\dependencies\ogg\vorbis\lib\lsp.c(398): warning C4244: =: преобразование "double" в "float", возможна потеря данных
+     1>x:\dependencies\ogg\vorbis\lib\lsp.c(450): warning C4244: =: преобразование "double" в "float", возможна потеря данных
+     1>x:\dependencies\ogg\vorbis\lib\lsp.c(453): warning C4244: =: преобразование "double" в "float", возможна потеря данных
+         mapping0.c
+     1>x:\dependencies\ogg\vorbis\lib\scales.h(43): warning C4244: =: преобразование "int" в "float", возможна потеря данных
+         mdct.c
+     1>x:\dependencies\ogg\vorbis\lib\mdct.c(58): warning C4244: =: преобразование "double" в "int", возможна потеря данных
+     1>x:\dependencies\ogg\vorbis\lib\mdct.c(66): warning C4244: =: преобразование "double" в "float", возможна потеря данных
+     1>x:\dependencies\ogg\vorbis\lib\mdct.c(67): warning C4244: =: преобразование "double" в "float", возможна потеря данных
+     1>x:\dependencies\ogg\vorbis\lib\mdct.c(68): warning C4244: =: преобразование "double" в "float", возможна потеря данных
+     1>x:\dependencies\ogg\vorbis\lib\mdct.c(69): warning C4244: =: преобразование "double" в "float", возможна потеря данных
+     1>x:\dependencies\ogg\vorbis\lib\mdct.c(72): warning C4244: =: преобразование "double" в "float", возможна потеря данных
+     1>x:\dependencies\ogg\vorbis\lib\mdct.c(73): warning C4244: =: преобразование "double" в "float", возможна потеря данных
+         psy.c
+     1>x:\dependencies\ogg\vorbis\lib\scales.h(43): warning C4244: =: преобразование "int" в "float", возможна потеря данных
+     1>x:\dependencies\ogg\vorbis\lib\psy.c(136): warning C4244: функция: преобразование "double" в "float", возможна потеря данных
+     1>x:\dependencies\ogg\vorbis\lib\psy.c(138): warning C4244: функция: преобразование "double" в "float", возможна потеря данных
+     1>x:\dependencies\ogg\vorbis\lib\psy.c(172): warning C4244: =: преобразование "double" в "int", возможна потеря данных
+     1>x:\dependencies\ogg\vorbis\lib\psy.c(173): warning C4244: =: преобразование "double" в "int", возможна потеря данных
+     1>x:\dependencies\ogg\vorbis\lib\psy.c(174): warning C4244: =: преобразование "double" в "int", возможна потеря данных
+     1>x:\dependencies\ogg\vorbis\lib\psy.c(191): warning C4244: инициализация: преобразование "double" в "int", возможна потеря данных
+     1>x:\dependencies\ogg\vorbis\lib\psy.c(192): warning C4244: инициализация: преобразование "double" в "int", возможна потеря данных
+     1>x:\dependencies\ogg\vorbis\lib\psy.c(216): warning C4244: инициализация: преобразование "double" в "int", возможна потеря данных
+     1>x:\dependencies\ogg\vorbis\lib\psy.c(217): warning C4244: инициализация: преобразование "double" в "int", возможна потеря данных
+     1>x:\dependencies\ogg\vorbis\lib\psy.c(238): warning C4244: инициализация: преобразование "double" в "int", возможна потеря данных
+     1>x:\dependencies\ogg\vorbis\lib\psy.c(253): warning C4244: =: преобразование "int" в "float", возможна потеря данных
+     1>x:\dependencies\ogg\vorbis\lib\psy.c(258): warning C4244: =: преобразование "int" в "float", возможна потеря данных
+     1>x:\dependencies\ogg\vorbis\lib\psy.c(273): warning C4244: =: преобразование "double" в "long", возможна потеря данных
+     1>x:\dependencies\ogg\vorbis\lib\psy.c(275): warning C4244: =: преобразование "double" в "long", возможна потеря данных
+     1>x:\dependencies\ogg\vorbis\lib\psy.c(276): warning C4244: =: преобразование "double" в "long", возможна потеря данных
+     1>x:\dependencies\ogg\vorbis\lib\psy.c(289): warning C4244: инициализация: преобразование "double" в "int", возможна потеря данных
+     1>x:\dependencies\ogg\vorbis\lib\psy.c(294): warning C4244: =: преобразование "double" в "float", возможна потеря данных
+     1>x:\dependencies\ogg\vorbis\lib\psy.c(301): warning C4244: инициализация: преобразование "double" в "float", возможна потеря данных
+     1>x:\dependencies\ogg\vorbis\lib\psy.c(314): warning C4244: =: преобразование "double" в "long", возможна потеря данных
+     1>x:\dependencies\ogg\vorbis\lib\psy.c(316): warning C4244: функция: преобразование "double" в "float", возможна потеря данных
+     1>x:\dependencies\ogg\vorbis\lib\psy.c(325): warning C4244: инициализация: преобразование "double" в "float", возможна потеря данных
+     1>x:\dependencies\ogg\vorbis\lib\psy.c(337): warning C4244: =: преобразование "double" в "float", возможна потеря данных
+     1>x:\dependencies\ogg\vorbis\lib\psy.c(391): warning C4244: =: преобразование "const float" в "int", возможна потеря данных
+     1>x:\dependencies\ogg\vorbis\lib\psy.c(393): warning C4244: =: преобразование "const float" в "int", возможна потеря данных
+     1>x:\dependencies\ogg\vorbis\lib\psy.c(557): warning C4244: =: преобразование "double" в "float", возможна потеря данных
+     1>x:\dependencies\ogg\vorbis\lib\psy.c(811): warning C4244: инициализация: преобразование "double" в "int", возможна потеря данных
+     1>x:\dependencies\ogg\vorbis\lib\psy.c(887): warning C4244: =: преобразование "double" в "float", возможна потеря данных
+     1>x:\dependencies\ogg\vorbis\lib\psy.c(900): warning C4305: инициализация: усечение из "double" к "float"
+     1>x:\dependencies\ogg\vorbis\lib\psy.c(924): warning C4244: return: преобразование "double" в "float", возможна потеря данных
+     1>x:\dependencies\ogg\vorbis\lib\psy.c(925): warning C4244: return: преобразование "double" в "float", возможна потеря данных
+     1>x:\dependencies\ogg\vorbis\lib\psy.c(926): warning C4244: return: преобразование "double" в "float", возможна потеря данных
+     1>x:\dependencies\ogg\vorbis\lib\psy.c(928): warning C4244: return: преобразование "double" в "float", возможна потеря данных
+     1>x:\dependencies\ogg\vorbis\lib\psy.c(929): warning C4244: return: преобразование "double" в "float", возможна потеря данных
+     1>x:\dependencies\ogg\vorbis\lib\psy.c(930): warning C4244: return: преобразование "double" в "float", возможна потеря данных
+     1>x:\dependencies\ogg\vorbis\lib\psy.c(934): warning C4244: return: преобразование "double" в "float", возможна потеря данных
+     1>x:\dependencies\ogg\vorbis\lib\psy.c(935): warning C4244: return: преобразование "double" в "float", возможна потеря данных
+     1>x:\dependencies\ogg\vorbis\lib\psy.c(936): warning C4244: return: преобразование "double" в "float", возможна потеря данных
+     1>x:\dependencies\ogg\vorbis\lib\psy.c(938): warning C4244: return: преобразование "double" в "float", возможна потеря данных
+     1>x:\dependencies\ogg\vorbis\lib\psy.c(939): warning C4244: return: преобразование "double" в "float", возможна потеря данных
+     1>x:\dependencies\ogg\vorbis\lib\psy.c(940): warning C4244: return: преобразование "double" в "float", возможна потеря данных
+     1>x:\dependencies\ogg\vorbis\lib\psy.c(969): warning C4244: инициализация: преобразование "double" в "float", возможна потеря данных
+     1>x:\dependencies\ogg\vorbis\lib\psy.c(970): warning C4244: инициализация: преобразование "double" в "float", возможна потеря данных
+     1>x:\dependencies\ogg\vorbis\lib\psy.c(1029): warning C4244: =: преобразование "double" в "float", возможна потеря данных
+     1>x:\dependencies\ogg\vorbis\lib\psy.c(1042): warning C4244: =: преобразование "double" в "float", возможна потеря данных
+     1>x:\dependencies\ogg\vorbis\lib\psy.c(1060): warning C4244: =: преобразование "double" в "float", возможна потеря данных
+     1>x:\dependencies\ogg\vorbis\lib\psy.c(1101): warning C4244: инициализация: преобразование "double" в "float", возможна потеря данных
+     1>x:\dependencies\ogg\vorbis\lib\psy.c(1102): warning C4244: инициализация: преобразование "double" в "float", возможна потеря данных
+         registry.c
+         res0.c
+     1>x:\dependencies\ogg\vorbis\lib\res0.c(265): warning C4244: =: преобразование "double" в "int", возможна потеря данных
+     1>x:\dependencies\ogg\vorbis\lib\res0.c(381): warning C4244: инициализация: преобразование "double" в "float", возможна потеря данных
+     1>x:\dependencies\ogg\vorbis\lib\res0.c(398): warning C4244: =: преобразование "double" в "float", возможна потеря данных
+     1>x:\dependencies\ogg\vorbis\lib\res0.c(399): warning C4244: +=: преобразование "double" в "float", возможна потеря данных
+     1>x:\dependencies\ogg\vorbis\lib\res0.c(461): warning C4244: =: преобразование "double" в "float", возможна потеря данных
+     1>x:\dependencies\ogg\vorbis\lib\res0.c(463): warning C4244: =: преобразование "double" в "float", возможна потеря данных
+         sharedbook.c
+     1>x:\dependencies\ogg\vorbis\lib\scales.h(43): warning C4244: =: преобразование "int" в "float", возможна потеря данных
+     1>x:\dependencies\ogg\vorbis\lib\sharedbook.c(55): warning C4244: =: преобразование "double" в "long", возможна потеря данных
+     1>x:\dependencies\ogg\vorbis\lib\sharedbook.c(56): warning C4244: =: преобразование "double" в "long", возможна потеря данных
+     1>x:\dependencies\ogg\vorbis\lib\sharedbook.c(67): warning C4244: return: преобразование "double" в "float", возможна потеря данных
+     1>x:\dependencies\ogg\vorbis\lib\sharedbook.c(151): warning C4244: инициализация: преобразование "double" в "long", возможна потеря данных
+     1>x:\dependencies\ogg\vorbis\lib\sharedbook.c(209): warning C4244: инициализация: преобразование "long" в "float", возможна потеря данных
+     1>x:\dependencies\ogg\vorbis\lib\sharedbook.c(210): warning C4244: =: преобразование "double" в "float", возможна потеря данных
+     1>x:\dependencies\ogg\vorbis\lib\sharedbook.c(229): warning C4244: инициализация: преобразование "long" в "float", возможна потеря данных
+     1>x:\dependencies\ogg\vorbis\lib\sharedbook.c(230): warning C4244: =: преобразование "double" в "float", возможна потеря данных
+     1>x:\dependencies\ogg\vorbis\lib\sharedbook.c(379): warning C4244: =: преобразование "long" в "char", возможна потеря данных
+         smallft.c
+     1>x:\dependencies\ogg\vorbis\lib\smallft.c(98): warning C4244: =: преобразование "double" в "float", возможна потеря данных
+     1>x:\dependencies\ogg\vorbis\lib\smallft.c(99): warning C4244: =: преобразование "double" в "float", возможна потеря данных
+     1>x:\dependencies\ogg\vorbis\lib\smallft.c(282): warning C4244: =: преобразование "double" в "float", возможна потеря данных
+     1>x:\dependencies\ogg\vorbis\lib\smallft.c(283): warning C4244: =: преобразование "double" в "float", возможна потеря данных
+     1>x:\dependencies\ogg\vorbis\lib\smallft.c(852): warning C4244: =: преобразование "double" в "float", возможна потеря данных
+     1>x:\dependencies\ogg\vorbis\lib\smallft.c(853): warning C4244: =: преобразование "double" в "float", возможна потеря данных
+         synthesis.c
+         vorbisenc.c
+     1>x:\dependencies\ogg\vorbis\lib\vorbisenc.c(154): fatal error C1083: Не удается открыть файл включение: modes/setup_44.h: No such file or directory
+         Создание кода...
+         Компиляция...
+         window.c
+         Создание кода...
+     1>Сборка проекта "X:\dependencies\OGG\vorbis\win32\vorbis_dynamic.vcxproj" завершена (целевые объекты Build) с ошибкой.
+
+Ошибка сборки.
+
+Затраченное время: 00:00:02.41

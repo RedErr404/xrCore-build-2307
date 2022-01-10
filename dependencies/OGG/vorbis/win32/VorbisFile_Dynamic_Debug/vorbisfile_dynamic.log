@@ -1,0 +1,27 @@
+﻿Сборка начата 28.04.2021 1:53:26.
+     1>Проект "X:\dependencies\OGG\vorbis\win32\vorbisfile_dynamic.vcxproj" в узле 2 (целевые объекты Build).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I..\..\ogg\include /I..\include /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _WINDOWS /D _MBCS /D _USRDLL /D _WIN32 /Gm- /EHsc /RTC1 /MTd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo".\VorbisFile_Dynamic_Debug/" /Fd".\VorbisFile_Dynamic_Debug/vc120.pdb" /Gz /TC /analyze- /errorReport:prompt ..\lib\vorbisfile.c
+         vorbisfile.c
+     1>x:\dependencies\ogg\vorbis\lib\vorbisfile.c(421): warning C4244: return: преобразование "ogg_int64_t" в "int", возможна потеря данных
+     1>x:\dependencies\ogg\vorbis\lib\vorbisfile.c(547): warning C4244: =: преобразование "ogg_int64_t" в "int", возможна потеря данных
+     1>x:\dependencies\ogg\vorbis\lib\vorbisfile.c(630): warning C4244: функция: преобразование "ogg_int64_t" в "long", возможна потеря данных
+     1>x:\dependencies\ogg\vorbis\lib\vorbisfile.c(835): warning C4244: =: преобразование "double" в "float", возможна потеря данных
+     1>x:\dependencies\ogg\vorbis\lib\vorbisfile.c(836): warning C4244: return: преобразование "double" в "long", возможна потеря данных
+     1>x:\dependencies\ogg\vorbis\lib\vorbisfile.c(840): warning C4244: return: преобразование "double" в "long", возможна потеря данных
+     1>x:\dependencies\ogg\vorbis\lib\vorbisfile.c(868): warning C4244: =: преобразование "double" в "long", возможна потеря данных
+     1>x:\dependencies\ogg\vorbis\lib\vorbisfile.c(1346): warning C4244: =: преобразование "ogg_int64_t" в "long", возможна потеря данных
+     1>x:\dependencies\ogg\vorbis\lib\vorbisfile.c(1379): warning C4244: инициализация: преобразование "double" в "ogg_int64_t", возможна потеря данных
+     1>x:\dependencies\ogg\vorbis\lib\vorbisfile.c(1406): warning C4244: инициализация: преобразование "double" в "ogg_int64_t", возможна потеря данных
+     1>x:\dependencies\ogg\vorbis\lib\vorbisfile.c(1726): warning C4244: инициализация: преобразование "double" в "float", возможна потеря данных
+     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.CppBuild.targets(1186,5): warning MSB8012: TargetPath(x:\vorbisfile_dynamic.dll) does not match the Linker's OutputFile property value (x:\vorbisfile.dll). This may cause your project to build incorrectly. To correct this, please make sure that $(OutDir), $(TargetName) and $(TargetExt) property values match the value specified in %(Link.OutputFile).
+     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.CppBuild.targets(1188,5): warning MSB8012: TargetName(vorbisfile_dynamic) does not match the Linker's OutputFile property value (vorbisfile). This may cause your project to build incorrectly. To correct this, please make sure that $(OutDir), $(TargetName) and $(TargetExt) property values match the value specified in %(Link.OutputFile).
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"x:\vorbisfile.dll" /INCREMENTAL:NO /NOLOGO /LIBPATH:..\..\ogg\win32\Dynamic_Debug /LIBPATH:.\Vorbis_Dynamic_Debug odbc32.lib odbccp32.lib ogg.lib vorbis.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /DEF:".\vorbisfile.def" /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:".\VorbisFile_Dynamic_Debug/vorbisfile_d.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"x:\vorbisfile.lib" /MACHINE:X86 /SAFESEH /DLL .\VorbisFile_Dynamic_Debug/vorbisfile.obj
+         x:\vorbis.lib
+     1>LINK : fatal error LNK1181: не удается открыть входной файл "ogg.lib"
+     1>Сборка проекта "X:\dependencies\OGG\vorbis\win32\vorbisfile_dynamic.vcxproj" завершена (целевые объекты Build) с ошибкой.
+
+Ошибка сборки.
+
+Затраченное время: 00:00:00.54

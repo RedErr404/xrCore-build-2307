@@ -1,0 +1,119 @@
+﻿Сборка начата 03.05.2021 0:11:04.
+     1>Проект "X:\xr_src\xrODE\contrib\msvc7\ode_default\default.vcxproj" в узле 2 (целевые объекты Build).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I../../../include /Zi /nologo /W3 /WX- /Ox /Ob2 /Oi /Ot /Oy /GL /D WIN32 /D _WINDOWS /D NDEBUG /D _USRDLL /D dSINGLE /D MSVC /D dNODEBUG /D _VC80_UPGRADE=0x0710 /D _USING_V110_SDK71_ /D _WINDLL /D _MBCS /GF /Gm- /MD /GS- /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Release\\" /Fd"x:\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt ..\..\..\ode\src\array.cpp ..\..\..\ode\src\Bounder33.cpp ..\..\..\ode\src\collision_kernel.cpp ..\..\..\ode\src\collision_quadtreespace.cpp ..\..\..\ode\src\collision_space.cpp ..\..\..\ode\src\collision_std.cpp ..\..\..\ode\src\collision_transform.cpp ..\..\..\ode\src\collision_util.cpp ..\..\..\ode\src\error.cpp "..\..\..\ode\src\export-dif.cpp" ..\..\..\ode\src\joint.cpp ..\..\..\ode\src\lcp.cpp ..\..\..\ode\src\mass.cpp ..\..\..\ode\src\mat.cpp ..\..\..\ode\src\matrix.cpp ..\..\..\ode\src\memory.cpp ..\..\..\ode\src\misc.cpp ..\..\..\ode\src\obstack.cpp ..\..\..\ode\src\ode.cpp ..\..\..\ode\src\odemath.cpp ..\..\..\ode\src\quickstep.cpp ..\..\..\ode\src\rotation.cpp ..\..\..\ode\src\step.cpp ..\..\..\ode\src\stepfast.cpp ..\..\..\ode\src\StepJointInternal.cpp ..\..\..\ode\src\testing.cpp ..\..\..\ode\src\timer.cpp ..\..\..\ode\src\util.cpp de_padf_integration.cpp
+         array.cpp
+         Bounder33.cpp
+         collision_kernel.cpp
+         collision_quadtreespace.cpp
+     1>..\..\..\ode\src\collision_quadtreespace.cpp(354): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+     1>..\..\..\ode\src\collision_quadtreespace.cpp(354): warning C4244: аргумент: преобразование "const int" в "float", возможна потеря данных
+     1>..\..\..\ode\src\collision_quadtreespace.cpp(387): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+     1>..\..\..\ode\src\collision_quadtreespace.cpp(387): warning C4244: аргумент: преобразование "const int" в "float", возможна потеря данных
+         collision_space.cpp
+         collision_std.cpp
+     1>..\..\..\ode\src\collision_std.cpp(1789): warning C4244: инициализация: преобразование "double" в "dReal", возможна потеря данных
+     1>..\..\..\ode\src\collision_std.cpp(1990): warning C4244: инициализация: преобразование "double" в "dReal", возможна потеря данных
+     1>..\..\..\ode\src\collision_std.cpp(2029): warning C4244: инициализация: преобразование "double" в "dReal", возможна потеря данных
+         collision_transform.cpp
+         collision_util.cpp
+         error.cpp
+         export-dif.cpp
+         joint.cpp
+         lcp.cpp
+     1>..\..\..\ode\src\lcp.cpp(1038): warning C4002: слишком много фактических параметров для макроопределения "dMessage"
+     1>..\..\..\ode\src\lcp.cpp(1306): warning C4002: слишком много фактических параметров для макроопределения "dMessage"
+         mass.cpp
+         mat.cpp
+     1>..\..\..\ode\src\mat.cpp(42): warning C4390: ";": обнаружен пустой контролируемый оператор; это правильно?
+     1>..\..\..\ode\src\mat.cpp(62): warning C4390: ";": обнаружен пустой контролируемый оператор; это правильно?
+     1>..\..\..\ode\src\mat.cpp(80): warning C4390: ";": обнаружен пустой контролируемый оператор; это правильно?
+     1>..\..\..\ode\src\mat.cpp(116): warning C4390: ";": обнаружен пустой контролируемый оператор; это правильно?
+     1>..\..\..\ode\src\mat.cpp(121): warning C4390: ";": обнаружен пустой контролируемый оператор; это правильно?
+     1>..\..\..\ode\src\mat.cpp(131): warning C4390: ";": обнаружен пустой контролируемый оператор; это правильно?
+     1>..\..\..\ode\src\mat.cpp(140): warning C4390: ";": обнаружен пустой контролируемый оператор; это правильно?
+     1>..\..\..\ode\src\mat.cpp(157): warning C4390: ";": обнаружен пустой контролируемый оператор; это правильно?
+     1>..\..\..\ode\src\mat.cpp(172): warning C4390: ";": обнаружен пустой контролируемый оператор; это правильно?
+     1>..\..\..\ode\src\mat.cpp(179): warning C4390: ";": обнаружен пустой контролируемый оператор; это правильно?
+     1>..\..\..\ode\src\mat.cpp(186): warning C4390: ";": обнаружен пустой контролируемый оператор; это правильно?
+     1>..\..\..\ode\src\mat.cpp(195): warning C4390: ";": обнаружен пустой контролируемый оператор; это правильно?
+     1>..\..\..\ode\src\mat.cpp(222): warning C4390: ";": обнаружен пустой контролируемый оператор; это правильно?
+         matrix.cpp
+         memory.cpp
+         misc.cpp
+         obstack.cpp
+     1>..\..\..\ode\src\obstack.cpp(67): warning C4390: ";": обнаружен пустой контролируемый оператор; это правильно?
+         ode.cpp
+     1>..\..\..\ode\src\ode.cpp(145): warning C4390: ";": обнаружен пустой контролируемый оператор; это правильно?
+     1>..\..\..\ode\src\ode.cpp(148): warning C4390: ";": обнаружен пустой контролируемый оператор; это правильно?
+     1>..\..\..\ode\src\ode.cpp(151): warning C4390: ";": обнаружен пустой контролируемый оператор; это правильно?
+     1>..\..\..\ode\src\ode.cpp(155): warning C4390: ";": обнаружен пустой контролируемый оператор; это правильно?
+     1>..\..\..\ode\src\ode.cpp(161): warning C4390: ";": обнаружен пустой контролируемый оператор; это правильно?
+     1>..\..\..\ode\src\ode.cpp(166): warning C4390: ";": обнаружен пустой контролируемый оператор; это правильно?
+     1>..\..\..\ode\src\ode.cpp(174): warning C4390: ";": обнаружен пустой контролируемый оператор; это правильно?
+     1>..\..\..\ode\src\ode.cpp(189): warning C4390: ";": обнаружен пустой контролируемый оператор; это правильно?
+     1>..\..\..\ode\src\ode.cpp(197): warning C4390: ";": обнаружен пустой контролируемый оператор; это правильно?
+     1>..\..\..\ode\src\ode.cpp(207): warning C4390: ";": обнаружен пустой контролируемый оператор; это правильно?
+     1>..\..\..\ode\src\ode.cpp(211): warning C4390: ";": обнаружен пустой контролируемый оператор; это правильно?
+     1>..\..\..\ode\src\ode.cpp(213): warning C4390: ";": обнаружен пустой контролируемый оператор; это правильно?
+     1>..\..\..\ode\src\ode.cpp(220): warning C4390: ";": обнаружен пустой контролируемый оператор; это правильно?
+     1>..\..\..\ode\src\ode.cpp(223): warning C4390: ";": обнаружен пустой контролируемый оператор; это правильно?
+         odemath.cpp
+         Компиляция...
+         quickstep.cpp
+         rotation.cpp
+         step.cpp
+         stepfast.cpp
+         StepJointInternal.cpp
+         testing.cpp
+         timer.cpp
+         util.cpp
+         de_padf_integration.cpp
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I../../../include /Zi /nologo /W3 /WX- /Ox /Ob2 /Oi /Ot /Oy /GL /D WIN32 /D _WINDOWS /D NDEBUG /D _USRDLL /D dSINGLE /D MSVC /D dNODEBUG /D _VC80_UPGRADE=0x0710 /D _USING_V110_SDK71_ /D _WINDLL /D _MBCS /GF /Gm- /MD /GS- /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Release\\" /Fd"x:\vc120.pdb" /Gd /TC /analyze- /errorReport:prompt ..\..\..\ode\src\fastdot.c ..\..\..\ode\src\fastldlt.c ..\..\..\ode\src\fastlsolve.c ..\..\..\ode\src\fastltsolve.c
+         fastdot.c
+         fastldlt.c
+         fastlsolve.c
+         fastltsolve.c
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"x:\ode.dll" /INCREMENTAL:NO /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /DEF:"../../../config/msvcdefs.def" /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"x:\ode.pdb" /SUBSYSTEM:WINDOWS,"5.01" /OPT:REF /OPT:ICF /LTCG /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"x:\ode.lib" /MACHINE:X86 /SAFESEH /DLL Release\array.obj
+         Release\Bounder33.obj
+         Release\collision_kernel.obj
+         Release\collision_quadtreespace.obj
+         Release\collision_space.obj
+         Release\collision_std.obj
+         Release\collision_transform.obj
+         Release\collision_util.obj
+         Release\error.obj
+         "Release\export-dif.obj"
+         Release\fastdot.obj
+         Release\fastldlt.obj
+         Release\fastlsolve.obj
+         Release\fastltsolve.obj
+         Release\joint.obj
+         Release\lcp.obj
+         Release\mass.obj
+         Release\mat.obj
+         Release\matrix.obj
+         Release\memory.obj
+         Release\misc.obj
+         Release\obstack.obj
+         Release\ode.obj
+         Release\odemath.obj
+         Release\quickstep.obj
+         Release\rotation.obj
+         Release\step.obj
+         Release\stepfast.obj
+         Release\StepJointInternal.obj
+         Release\testing.obj
+         Release\timer.obj
+         Release\util.obj
+         Release\de_padf_integration.obj
+            Создается библиотека x:\ode.lib и объект x:\ode.exp
+         Создание кода
+         Создание кода завершено
+         default.vcxproj -> x:\ode.dll
+     1>Сборка проекта "X:\xr_src\xrODE\contrib\msvc7\ode_default\default.vcxproj" завершена (целевые объекты Build).
+
+Сборка успешно завершена.
+
+Затраченное время: 00:00:14.89

@@ -1,0 +1,49 @@
+﻿Сборка начата 28.04.2021 2:02:42.
+     1>Проект "X:\xr_src\xrLUA_JIT\xrLUA_JIT.vcxproj" в узле 2 (целевые объекты Build).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /Idynasm /Ix:\xrCore /I"X:\External Library\luabind\luabind\luabind\luabind" /I"X:\External Library\boost_1_30_0" /IX:\xrLUA_JIT\src /Zi /nologo /W3 /WX- /MP /Ox /Ob2 /Oi /Ot /Oy /GL /D WIN32 /D NDEBUG /D _WINDOWS /D _USRDLL /D LUA_BUILD_AS_DLL /D LUABIND_BUILDING /D LUABIND_NO_ERROR_CHECKING /D LUABIND_NO_EXCEPTIONS /D _VC80_UPGRADE=0x0710 /D _USING_V110_SDK71_ /D _WINDLL /D _MBCS /GF /Gm- /MD /GS- /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Release\\" /Fd"Release\vc120.pdb" /Gd /TP /wd4311 /wd4996 /analyze- /errorReport:prompt luabind\class.cpp luabind\class_info.cpp luabind\class_registry.cpp luabind\class_rep.cpp luabind\create_class.cpp luabind\error.cpp luabind\find_best_match.cpp luabind\function.cpp luabind\implicit_cast.cpp luabind\link_compatibility.cpp luabind\object.cpp luabind\object_rep.cpp luabind\open.cpp luabind\pcall.cpp luabind\ref.cpp luabind\scope.cpp luabind\stack_content_by_name.cpp luabind\weak_ref.cpp luabind\wrapper_base.cpp StdAfx.cpp
+         class.cpp
+         class_info.cpp
+         class_registry.cpp
+         class_rep.cpp
+         create_class.cpp
+         error.cpp
+     1>luabind\class.cpp(23): fatal error C1083: Не удается открыть файл включение: luabind/lua_include.hpp: No such file or directory
+     1>luabind\class_info.cpp(23): fatal error C1083: Не удается открыть файл включение: luabind/lua_include.hpp: No such file or directory
+         find_best_match.cpp
+         function.cpp
+     1>luabind\class_rep.cpp(23): fatal error C1083: Не удается открыть файл включение: luabind/lua_include.hpp: No such file or directory
+     1>luabind\class_registry.cpp(23): fatal error C1083: Не удается открыть файл включение: luabind/lua_include.hpp: No such file or directory
+         implicit_cast.cpp
+     1>luabind\create_class.cpp(23): fatal error C1083: Не удается открыть файл включение: luabind/lua_include.hpp: No such file or directory
+     1>luabind\error.cpp(23): fatal error C1083: Не удается открыть файл включение: luabind/error.hpp: No such file or directory
+         link_compatibility.cpp
+     1>luabind\function.cpp(23): fatal error C1083: Не удается открыть файл включение: luabind/lua_include.hpp: No such file or directory
+         object.cpp
+         object_rep.cpp
+         open.cpp
+     1>luabind\find_best_match.cpp(23): fatal error C1083: Не удается открыть файл включение: luabind/lua_include.hpp: No such file or directory
+         pcall.cpp
+     1>luabind\implicit_cast.cpp(23): fatal error C1083: Не удается открыть файл включение: luabind/lua_include.hpp: No such file or directory
+     1>luabind\link_compatibility.cpp(23): fatal error C1083: Не удается открыть файл включение: luabind/detail/link_compatibility.hpp: No such file or directory
+         ref.cpp
+     1>luabind\open.cpp(23): fatal error C1083: Не удается открыть файл включение: luabind/lua_include.hpp: No such file or directory
+     1>luabind\object.cpp(23): fatal error C1083: Не удается открыть файл включение: luabind/lua_include.hpp: No such file or directory
+     1>luabind\object_rep.cpp(23): fatal error C1083: Не удается открыть файл включение: luabind/detail/object_rep.hpp: No such file or directory
+         scope.cpp
+         stack_content_by_name.cpp
+     1>luabind\pcall.cpp(23): fatal error C1083: Не удается открыть файл включение: luabind/detail/pcall.hpp: No such file or directory
+         weak_ref.cpp
+         wrapper_base.cpp
+     1>luabind\scope.cpp(23): fatal error C1083: Не удается открыть файл включение: luabind/lua_include.hpp: No such file or directory
+         StdAfx.cpp
+     1>luabind\stack_content_by_name.cpp(23): fatal error C1083: Не удается открыть файл включение: luabind/lua_include.hpp: No such file or directory
+     1>luabind\wrapper_base.cpp(23): fatal error C1083: Не удается открыть файл включение: luabind/config.hpp: No such file or directory
+     1>x:\xr_src\xrlua_jit\stdafx.h(12): fatal error C1083: Не удается открыть файл включение: xrCore.h: No such file or directory (StdAfx.cpp)
+     1>luabind\ref.cpp(24): fatal error C1083: Не удается открыть файл включение: luabind/config.hpp: No such file or directory
+     1>luabind\weak_ref.cpp(25): fatal error C1083: Не удается открыть файл включение: luabind/lua_include.hpp: No such file or directory
+     1>Сборка проекта "X:\xr_src\xrLUA_JIT\xrLUA_JIT.vcxproj" завершена (целевые объекты Build) с ошибкой.
+
+Ошибка сборки.
+
+Затраченное время: 00:00:00.82
